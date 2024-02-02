@@ -1,0 +1,3 @@
+FROM node:21.6.1
+
+EXPOSE 3000
