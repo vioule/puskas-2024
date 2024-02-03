@@ -4,10 +4,10 @@ services:
     container_name: puskas-2024-container
     build: .
     volumes:
-      - .:/puskas-2024
-      - /puskas-2024/node_modules
-      - /puskas-2024/.next
+      - .:/root/puskas-2024
+      - /root/puskas-2024/node_modules
+      - /root/puskas-2024/.next
     ports:
-      - "3000:3000"
+      - "3001:3000"
     tty: true
     stdin_open: true
