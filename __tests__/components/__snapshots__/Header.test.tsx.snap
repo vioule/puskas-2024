@@ -3,7 +3,7 @@
 exports[`render Header unchanged 1`] = `
 <div>
   <header
-    class="flex min-h-screen flex-col items-center justify-center p-24"
+    class="flex min-h-screen flex-col items-center justify-center p-24 relative"
   >
     <div
       class="flex flex-col max-w-[22.5rem] invisible"
@@ -35,6 +35,14 @@ exports[`render Header unchanged 1`] = `
       >
         AWARD
       </span>
+      <div
+        class="flex justify-center items-center gap-1 mt-10"
+        style="opacity: 0;"
+      >
+        <div
+          class="w-[1px] h-4 bg-white animate-scroll origin-top"
+        />
+      </div>
     </div>
   </header>
 </div>

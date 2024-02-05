@@ -17,7 +17,7 @@ export default function Header() {
     });
   });
   return (
-    <header className="flex min-h-screen flex-col items-center justify-center p-24">
+    <header className="flex min-h-screen flex-col items-center justify-center p-24 relative">
       <div
         className="flex flex-col max-w-[22.5rem] invisible"
         ref={ref}
@@ -32,6 +32,9 @@ export default function Header() {
         <span className="text-white text-2xl tracking-[0.5rem] text-right">
           AWARD
         </span>
+        <div className="flex justify-center items-center gap-1 mt-10">
+          <div className="w-[1px] h-4 bg-white animate-scroll origin-top"></div>
+        </div>
       </div>
     </header>
   );

@@ -22,6 +22,20 @@ const config: Config = {
         roboto: ["var(--font-roboto)"],
         rocksalt: ["var(--font-rocksalt)"],
       },
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateY(0rem) scaleY(1)", opacity: "0.1" },
+          "50%": {
+            transform: "translateY(0.5rem) scaleY(2.25)",
+            opacity: "0.4",
+          },
+
+          "100%": { transform: "translateY(0rem) scaleY(1)", opacity: "0.1" },
+        },
+      },
+      animation: {
+        scroll: "scroll 2s linear infinite",
+      },
     },
   },
   plugins: [],
