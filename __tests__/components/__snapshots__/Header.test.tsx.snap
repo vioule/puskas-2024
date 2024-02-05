@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Header unchanged 1`] = `
+<div>
+  <header
+    class="flex min-h-screen flex-col items-center justify-center p-24"
+  >
+    <div
+      class="flex flex-col max-w-[22.5rem] invisible"
+      data-testid="container"
+      style="visibility: visible;"
+    >
+      <div
+        class="relative h-20"
+        style="opacity: 0;"
+      >
+        <img
+          alt="FIFA logo"
+          data-nimg="fill"
+          decoding="async"
+          loading="lazy"
+          src="/FIFA.svg"
+          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+        />
+      </div>
+      <span
+        class="text-6xl text-gold tracking-[1.5rem] font-black font-roboto mt-4"
+        style="opacity: 0;"
+      >
+        PUSKÀS
+      </span>
+      <span
+        class="text-white text-2xl tracking-[0.5rem] text-right"
+        style="opacity: 0;"
+      >
+        AWARD
+      </span>
+    </div>
+  </header>
+</div>
+`;

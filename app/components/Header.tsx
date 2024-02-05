@@ -18,7 +18,11 @@ export default function Header() {
   });
   return (
     <header className="flex min-h-screen flex-col items-center justify-center p-24">
-      <div className="flex flex-col max-w-[22.5rem] invisible" ref={ref}>
+      <div
+        className="flex flex-col max-w-[22.5rem] invisible"
+        ref={ref}
+        data-testid="container"
+      >
         <div className="relative h-20">
           <Image src="/FIFA.svg" alt="FIFA logo" fill />
         </div>
