@@ -1,0 +1,90 @@
+[
+  {
+    "year": 2009,
+    "name": "cristiano ronaldo",
+    "comp": "UEFA champions league",
+    "preview": "/",
+    "video": "/",
+    "poster": ""
+  },
+  {
+    "year": 2010,
+    "name": "hamit altıntop",
+    "comp": "European Championship qualifiers",
+    "preview": "/",
+    "video": "/",
+    "poster": ""
+  },
+  {
+    "year": 2011,
+    "name": "neymar da Silva Santos Júnior",
+    "comp": "Brasileirão",
+    "preview": "/",
+    "video": "/",
+    "poster": ""
+  },
+  {
+    "year": 2012,
+    "name": "miroslav stoch",
+    "comp": "Süper Lig",
+    "preview": "/",
+    "video": "/",
+    "poster": ""
+  },
+  {
+    "year": 2013,
+    "name": "zlatan ibrahimović",
+    "comp": "Friendly",
+    "preview": "/",
+    "video": "/",
+    "poster": ""
+  },
+  {
+    "year": 2014,
+    "name": "james rodriguez",
+    "comp": "World cup",
+    "preview": "/",
+    "video": "/",
+    "poster": ""
+  },
+  {
+    "year": 2015,
+    "name": "wendell silva lira",
+    "comp": "Campeonato Goiano",
+    "preview": "/",
+    "video": "/",
+    "poster": ""
+  },
+  {
+    "year": 2016,
+    "name": "mohd faiz subri",
+    "comp": "Astro Super League",
+    "preview": "/",
+    "video": "/",
+    "poster": ""
+  },
+  {
+    "year": 2017,
+    "name": "olivier giroud",
+    "comp": "premier league",
+    "preview": "/",
+    "video": "/",
+    "poster": ""
+  },
+  {
+    "year": 2018,
+    "name": "mohamed salah",
+    "comp": "premier league",
+    "preview": "/",
+    "video": "/",
+    "poster": ""
+  },
+  {
+    "year": 2019,
+    "name": "daniel zsori",
+    "comp": "OTP Bank Liga / Nemzeti Bajnokság I",
+    "preview": "/",
+    "video": "/",
+    "poster": ""
+  }
+]

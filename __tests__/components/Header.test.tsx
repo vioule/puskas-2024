@@ -6,7 +6,7 @@ test("render Header unchanged", () => {
   expect(container).toMatchSnapshot();
 });
 
-test("Header is visible after GSAP animation", async () => {
+test("Header is visible after Framer motion animation", async () => {
   render(<Header />);
   const container = screen.getByTestId("container");
   expect(container).toHaveStyle("opacity: 0");

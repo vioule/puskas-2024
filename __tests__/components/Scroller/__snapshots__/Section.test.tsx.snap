@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Section unchanged 1`] = `
+<div>
+  <div
+    class="flex justify-center items-center h-screen font-rocksalt text-7xl tracking-[1.5rem] first:mt-[100vh] transition-[color] duration-1000 ease-linear text-gold"
+  >
+    <span>
+      2023
+    </span>
+  </div>
+</div>
+`;

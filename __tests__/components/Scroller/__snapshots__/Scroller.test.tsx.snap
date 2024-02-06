@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Scroller unchanged 1`] = `
+<div>
+  <div
+    class="relative w-full mt-[100vh] bg-black border-t-8 border-white"
+    data-testid="container"
+    style="transform: none;"
+  >
+    <div
+      class="flex justify-center items-center h-screen font-rocksalt text-7xl tracking-[1.5rem] first:mt-[100vh] transition-[color] duration-1000 ease-linear text-gold"
+    >
+      <span>
+        2009
+      </span>
+    </div>
+    <div
+      class="flex justify-center items-center h-screen font-rocksalt text-7xl tracking-[1.5rem] first:mt-[100vh] transition-[color] duration-1000 ease-linear text-gold"
+    >
+      <span>
+        2010
+      </span>
+    </div>
+    <div
+      class="flex justify-center items-center h-screen font-rocksalt text-7xl tracking-[1.5rem] first:mt-[100vh] transition-[color] duration-1000 ease-linear text-gold"
+    >
+      <span>
+        2011
+      </span>
+    </div>
+    <div
+      class="flex justify-center items-center h-screen font-rocksalt text-7xl tracking-[1.5rem] first:mt-[100vh] transition-[color] duration-1000 ease-linear text-gold"
+    >
+      <span>
+        2012
+      </span>
+    </div>
+    <div
+      class="flex justify-center items-center h-screen font-rocksalt text-7xl tracking-[1.5rem] first:mt-[100vh] transition-[color] duration-1000 ease-linear text-gold"
+    >
+      <span>
+        2013
+      </span>
+    </div>
+    <div
+      class="flex justify-center items-center h-screen font-rocksalt text-7xl tracking-[1.5rem] first:mt-[100vh] transition-[color] duration-1000 ease-linear text-gold"
+    >
+      <span>
+        2014
+      </span>
+    </div>
+    <div
+      class="flex justify-center items-center h-screen font-rocksalt text-7xl tracking-[1.5rem] first:mt-[100vh] transition-[color] duration-1000 ease-linear text-gold"
+    >
+      <span>
+        2015
+      </span>
+    </div>
+    <div
+      class="flex justify-center items-center h-screen font-rocksalt text-7xl tracking-[1.5rem] first:mt-[100vh] transition-[color] duration-1000 ease-linear text-gold"
+    >
+      <span>
+        2016
+      </span>
+    </div>
+    <div
+      class="flex justify-center items-center h-screen font-rocksalt text-7xl tracking-[1.5rem] first:mt-[100vh] transition-[color] duration-1000 ease-linear text-gold"
+    >
+      <span>
+        2017
+      </span>
+    </div>
+    <div
+      class="flex justify-center items-center h-screen font-rocksalt text-7xl tracking-[1.5rem] first:mt-[100vh] transition-[color] duration-1000 ease-linear text-gold"
+    >
+      <span>
+        2018
+      </span>
+    </div>
+    <div
+      class="flex justify-center items-center h-screen font-rocksalt text-7xl tracking-[1.5rem] first:mt-[100vh] transition-[color] duration-1000 ease-linear text-gold"
+    >
+      <span>
+        2019
+      </span>
+    </div>
+  </div>
+</div>
+`;
