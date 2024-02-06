@@ -3,7 +3,7 @@
 exports[`render Header unchanged 1`] = `
 <div>
   <header
-    class="flex min-h-screen flex-col items-center justify-center p-24 relative"
+    class="fixed top-0 w-full flex min-h-screen flex-col items-center justify-center p-24 bg-black"
   >
     <div
       class="flex flex-col max-w-[22.5rem]"

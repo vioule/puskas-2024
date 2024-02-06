@@ -15,7 +15,7 @@ export default function Header() {
     hidden: { opacity: 0 },
   };
   return (
-    <header className="flex min-h-screen flex-col items-center justify-center p-24 relative">
+    <header className="fixed top-0 w-full flex min-h-screen flex-col items-center justify-center p-24 bg-black">
       <motion.div
         className="flex flex-col max-w-[22.5rem]"
         data-testid="container"
