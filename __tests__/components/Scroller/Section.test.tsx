@@ -1,5 +1,6 @@
 import { render } from "@testing-library/react";
 import Section from "@/app/components/Scroller/Section";
+import { dataInitialState } from "@/app/components/DataProvider";
 
 test("render Section unchanged", async () => {
   global.IntersectionObserver = jest.fn().mockReturnValue({
@@ -7,6 +8,6 @@ test("render Section unchanged", async () => {
     unobserve: () => null,
     disconnect: () => null,
   });
-  const { container } = render(<Section year={2023} />);
+  const { container } = render(<Section data={dataInitialState} />);
   expect(container).toMatchSnapshot();
 });

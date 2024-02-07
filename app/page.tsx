@@ -1,4 +1,5 @@
 "use client";
+import { use, useState } from "react";
 import Content from "./components/Content";
 import Header from "./components/Header";
 import Scroller from "./components/Scroller";
@@ -10,6 +11,7 @@ import {
   useTransform,
   useSpring,
 } from "framer-motion";
+import DataProvider from "./components/DataProvider";
 
 export default function Home() {
   const { scrollY } = useScroll();
@@ -21,10 +23,12 @@ export default function Home() {
   const skewY = useTransform(smoothVelocity, [-7000, 7000], [-30, 30]);
   const skewYNeg = useTransform(smoothVelocity, [-7000, 7000], [30, -30]);
   return (
-    <main className="bg-black">
+    <main className="bg-black h-[1200vh]">
       <Header skewY={skewY} skewYNeg={skewYNeg} />
-      <Content />
-      <Scroller skewY={skewY} />
+      <DataProvider>
+        <Content />
+        <Scroller skewY={skewY} />
+      </DataProvider>
       <Signature />
     </main>
   );

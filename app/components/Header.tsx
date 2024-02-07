@@ -26,7 +26,7 @@ export default function Header({ skewY, skewYNeg }: HeaderProps) {
   };
   return (
     <motion.header
-      className="fixed top-0 w-full overflow-hidden z-[100]"
+      className="fixed top-0 w-full overflow-hidden"
       style={{ height, skewY }}
     >
       <motion.div

@@ -2,89 +2,56 @@
   {
     "year": 2009,
     "name": "cristiano ronaldo",
-    "comp": "UEFA champions league",
-    "preview": "/",
-    "video": "/",
-    "poster": ""
+    "comp": "UEFA champions league"
   },
   {
     "year": 2010,
     "name": "hamit altıntop",
-    "comp": "European Championship qualifiers",
-    "preview": "/",
-    "video": "/",
-    "poster": ""
+    "comp": "European Championship qualifiers"
   },
   {
     "year": 2011,
     "name": "neymar da Silva Santos Júnior",
-    "comp": "Brasileirão",
-    "preview": "/",
-    "video": "/",
-    "poster": ""
+    "comp": "Brasileirão"
   },
   {
     "year": 2012,
     "name": "miroslav stoch",
-    "comp": "Süper Lig",
-    "preview": "/",
-    "video": "/",
-    "poster": ""
+    "comp": "Süper Lig"
   },
   {
     "year": 2013,
     "name": "zlatan ibrahimović",
-    "comp": "Friendly",
-    "preview": "/",
-    "video": "/",
-    "poster": ""
+    "comp": "Friendly"
   },
   {
     "year": 2014,
     "name": "james rodriguez",
-    "comp": "World cup",
-    "preview": "/",
-    "video": "/",
-    "poster": ""
+    "comp": "World cup"
   },
   {
     "year": 2015,
     "name": "wendell silva lira",
-    "comp": "Campeonato Goiano",
-    "preview": "/",
-    "video": "/",
-    "poster": ""
+    "comp": "Campeonato Goiano"
   },
   {
     "year": 2016,
     "name": "mohd faiz subri",
-    "comp": "Astro Super League",
-    "preview": "/",
-    "video": "/",
-    "poster": ""
+    "comp": "Astro Super League"
   },
   {
     "year": 2017,
     "name": "olivier giroud",
-    "comp": "premier league",
-    "preview": "/",
-    "video": "/",
-    "poster": ""
+    "comp": "premier league"
   },
   {
     "year": 2018,
     "name": "mohamed salah",
-    "comp": "premier league",
-    "preview": "/",
-    "video": "/",
-    "poster": ""
+    "comp": "premier league"
   },
   {
     "year": 2019,
     "name": "daniel zsori",
-    "comp": "OTP Bank Liga / Nemzeti Bajnokság I",
-    "preview": "/",
-    "video": "/",
-    "poster": ""
+    "comp": "OTP Bank Liga / Nemzeti Bajnokság I"
   }
 ]

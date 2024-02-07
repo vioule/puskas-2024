@@ -10,12 +10,12 @@ interface ScrollerProps {
 export default function Scroller({ skewY }: ScrollerProps) {
   return (
     <motion.div
-      className="relative w-full mt-[100vh] border-t-8 border-white z-20"
+      className="relative flex flex-col items-center w-full mt-[100vh] border-t-8 border-white"
       style={{ skewY }}
       data-testid="container"
     >
       {data.map((x) => {
-        return <Section key={x.year} year={x.year} />;
+        return <Section key={x.year} data={x} />;
       })}
     </motion.div>
   );

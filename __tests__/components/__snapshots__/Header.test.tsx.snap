@@ -3,7 +3,7 @@
 exports[`render Header unchanged 1`] = `
 <div>
   <header
-    class="fixed top-0 w-full overflow-hidden z-[100]"
+    class="fixed top-0 w-full overflow-hidden"
     style="height: 100vh; transform: skewY(10deg) translateZ(0);"
   >
     <div
