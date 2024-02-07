@@ -3,9 +3,9 @@
 exports[`render Scroller unchanged 1`] = `
 <div>
   <div
-    class="relative w-full mt-[100vh] bg-black border-t-8 border-white"
+    class="relative w-full mt-[100vh] border-t-8 border-white z-20"
     data-testid="container"
-    style="transform: none;"
+    style="transform: skewY(10deg) translateZ(0);"
   >
     <div
       class="flex justify-center items-center h-screen font-rocksalt text-7xl tracking-[1.5rem] first:mt-[100vh] transition-[color] duration-1000 ease-linear text-gold"

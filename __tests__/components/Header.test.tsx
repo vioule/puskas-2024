@@ -1,13 +1,16 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import Header from "@/app/components/Header";
+import { motionValue } from "framer-motion";
 
 test("render Header unchanged", () => {
-  const { container } = render(<Header />);
+  const { container } = render(
+    <Header skewY={motionValue(10)} skewYNeg={motionValue(-10)} />
+  );
   expect(container).toMatchSnapshot();
 });
 
 test("Header is visible after Framer motion animation", async () => {
-  render(<Header />);
+  render(<Header skewY={motionValue(10)} skewYNeg={motionValue(-10)} />);
   const container = screen.getByTestId("container");
   expect(container).toHaveStyle("opacity: 0");
   expect(container.children[0]).toHaveStyle("opacity: 0");

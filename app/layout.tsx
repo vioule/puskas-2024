@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${roboto.variable} ${rocksalt.variable} max-sm:text-[10px] max-xl:text-[14px] text-[18px]`}
+      className={`${roboto.variable} ${rocksalt.variable} max-sm:text-[10px] max-xl:text-[14px] text-[18px] bg-black`}
     >
       <body>{children}</body>
     </html>

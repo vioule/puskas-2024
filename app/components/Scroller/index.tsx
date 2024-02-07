@@ -1,26 +1,16 @@
 "use client";
 import data from "@/app/data.json";
 import Section from "./Section";
-import {
-  motion,
-  useScroll,
-  useVelocity,
-  useTransform,
-  useSpring,
-} from "framer-motion";
+import { motion, MotionValue } from "framer-motion";
 
-export default function Scroller() {
-  const { scrollY } = useScroll();
-  const scrollVelocity = useVelocity(scrollY);
-  const smoothVelocity = useSpring(scrollVelocity, {
-    damping: 60,
-    stiffness: 1000,
-  });
-  const skewY = useTransform(smoothVelocity, [-7000, 7000], [-30, 30]);
+interface ScrollerProps {
+  skewY: MotionValue<number>;
+}
 
+export default function Scroller({ skewY }: ScrollerProps) {
   return (
     <motion.div
-      className="relative w-full mt-[100vh] bg-black border-t-8 border-white"
+      className="relative w-full mt-[100vh] border-t-8 border-white z-20"
       style={{ skewY }}
       data-testid="container"
     >
