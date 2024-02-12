@@ -6,24 +6,34 @@ export type DataType = {
   comp: string;
 };
 
+export type LightboxType = {
+  preview: boolean;
+  poster: boolean;
+};
+
 interface IAppContext {
   data: DataType;
   setData: Dispatch<SetStateAction<DataType>>;
-  preview: boolean;
-  setPreview: Dispatch<SetStateAction<boolean>>;
+  lightbox: LightboxType;
+  setLightbox: Dispatch<SetStateAction<LightboxType>>;
 }
 
-export const dataInitialState = {
+export const dataInitialState: DataType = {
   year: 2009,
   name: "cristiano ronaldo",
   comp: "UEFA champions league",
 };
 
+export const lightboxInitialState: LightboxType = {
+  preview: false,
+  poster: false,
+};
+
 export const AppContext = createContext<IAppContext>({
   data: dataInitialState,
   setData: () => {},
-  preview: false,
-  setPreview: () => {},
+  lightbox: lightboxInitialState,
+  setLightbox: () => {},
 });
 
 export default function AppProvider({
@@ -32,9 +42,9 @@ export default function AppProvider({
   children: React.ReactNode;
 }) {
   const [data, setData] = useState<DataType>(dataInitialState);
-  const [preview, setPreview] = useState(false);
+  const [lightbox, setLightbox] = useState(lightboxInitialState);
   return (
-    <AppContext.Provider value={{ data, setData, preview, setPreview }}>
+    <AppContext.Provider value={{ data, setData, lightbox, setLightbox }}>
       {children}
     </AppContext.Provider>
   );

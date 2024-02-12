@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render Section unchanged 1`] = `
+exports[`<Section /> render Section unchanged 1`] = `
 <div>
   <div
-    class="flex justify-center items-center w-full h-screen font-rocksalt text-7xl tracking-[1.5rem] first:mt-[100vh] max-w-[800px] transition-[color] duration-1000 ease-linear text-gold "
+    class="flex justify-center items-center w-full h-screen font-rocksalt text-7xl tracking-[1.5rem] first:mt-[100vh] max-w-[800px] transition-[color] duration-1000 ease-linear text-white "
+    data-testid="section"
   >
     <span>
       2009

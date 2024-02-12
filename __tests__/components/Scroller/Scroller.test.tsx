@@ -1,13 +1,80 @@
-import { render } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import Scroller from "@/app/components/Scroller";
-import { motionValue } from "framer-motion";
+import * as module from "framer-motion";
+import {
+  AppContext,
+  DataType,
+  LightboxType,
+} from "@/app/components/DataProvider";
 
-test("render Scroller unchanged", async () => {
-  global.IntersectionObserver = jest.fn().mockReturnValue({
-    observe: () => null,
-    unobserve: () => null,
-    disconnect: () => null,
+const dataInitialState: DataType = {
+  year: 2009,
+  name: "cristiano ronaldo",
+  comp: "UEFA champions league",
+};
+const setData = jest.fn();
+const setLightbox = jest.fn();
+
+jest.spyOn(module, "useInView").mockReturnValue(true);
+
+describe("<Scroller />", () => {
+  test("poster should have correct styles", async () => {
+    const lightbox: LightboxType = {
+      preview: false,
+      poster: true,
+    };
+    render(
+      <AppContext.Provider
+        value={{
+          data: dataInitialState,
+          setData,
+          lightbox,
+          setLightbox,
+        }}
+      >
+        <Scroller skewY={module.motionValue(10)} />
+      </AppContext.Provider>
+    );
+
+    await waitFor(() => {
+      const scroller = screen.getByTestId("container");
+      expect(document.body).toHaveStyle({
+        overflow: "hidden",
+      });
+      expect(scroller).toHaveStyle({
+        opacity: 0,
+        transform: "skewY(10deg) translateZ(0)",
+      });
+    });
   });
-  const { container } = render(<Scroller skewY={motionValue(10)} />);
-  expect(container).toMatchSnapshot();
+  test("!poster should have correct styles", async () => {
+    const lightbox: LightboxType = {
+      preview: false,
+      poster: false,
+    };
+    render(
+      <AppContext.Provider
+        value={{
+          data: dataInitialState,
+          setData,
+          lightbox,
+          setLightbox,
+        }}
+      >
+        <Scroller skewY={module.motionValue(10)} />
+      </AppContext.Provider>
+    );
+
+    await waitFor(() => {
+      const scroller = screen.getByTestId("container");
+      expect(document.body).toHaveStyle({
+        overflow: "auto",
+      });
+      expect(scroller).toHaveStyle({
+        opacity: 1,
+        display: "flex",
+        transform: "skewY(10deg) translateZ(0)",
+      });
+    });
+  });
 });
