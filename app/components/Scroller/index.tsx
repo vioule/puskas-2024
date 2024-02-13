@@ -4,7 +4,7 @@ import Section from "./Section";
 import { motion, MotionValue } from "framer-motion";
 import { useContext, useEffect } from "react";
 import { AppContext } from "../DataProvider";
-import { Visibility } from "../Content";
+import { Visibility } from "../Content/Preview";
 
 interface ScrollerProps {
   skewY: MotionValue<number>;
@@ -32,6 +32,9 @@ export default function Scroller({ skewY }: ScrollerProps) {
     visible: {
       display: "flex",
       opacity: 1,
+      transition: {
+        delay: 0.5,
+      },
     },
     hidden: {
       opacity: 0,

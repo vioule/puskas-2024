@@ -9,6 +9,7 @@ export default function ScrollProgress() {
   return (
     <motion.div
       id="scroll-progress"
+      data-testid="scroll-progress"
       className="w-[0.8%] bg-gold h-full absolute bottom-0 origin-bottom-left"
       style={{ scaleY: smoothVelocity }}
     ></motion.div>

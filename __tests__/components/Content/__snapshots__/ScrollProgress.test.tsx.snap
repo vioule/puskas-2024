@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render ScrollProgress unchanged 1`] = `
+<div>
+  <div
+    class="w-[0.8%] bg-gold h-full absolute bottom-0 origin-bottom-left"
+    data-testid="scroll-progress"
+    id="scroll-progress"
+    style="transform: scaleY(0.75) translateZ(0);"
+  />
+</div>
+`;

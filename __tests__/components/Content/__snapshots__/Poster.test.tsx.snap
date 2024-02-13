@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Poster unchanged 1`] = `
+<div>
+  <div
+    class="absolute w-full h-full"
+    id="poster"
+    style="display: none;"
+  >
+    <img
+      alt="poster 2010"
+      class="absolute top-0 left-0 w-full h-full object-cover object-center"
+      data-nimg="1"
+      decoding="async"
+      height="450"
+      loading="lazy"
+      src="/_next/image?url=%2Fimages%2F2010.jpg&w=1920&q=75"
+      srcset="/_next/image?url=%2Fimages%2F2010.jpg&w=828&q=75 1x, /_next/image?url=%2Fimages%2F2010.jpg&w=1920&q=75 2x"
+      style="color: transparent;"
+      width="800"
+    />
+    <svg
+      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white opacity-60 hover:cursor-pointer hover:opacity-100"
+      fill="currentColor"
+      height="5rem"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 448 512"
+      width="5rem"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
+      />
+    </svg>
+  </div>
+</div>
+`;
