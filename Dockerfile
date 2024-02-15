@@ -1,4 +1,4 @@
-FROM node:21.6.1
+FROM node:20.11.0
 
 COPY . /root/puskas-2024
 WORKDIR /root/puskas-2024
