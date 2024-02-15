@@ -11,11 +11,21 @@ export type LightboxType = {
   poster: boolean;
 };
 
+export type VideoPlayerType = {
+  poster: boolean;
+  play: boolean;
+  pause: boolean;
+  ended: boolean;
+  loading: boolean;
+};
+
 interface IAppContext {
   data: DataType;
   setData: Dispatch<SetStateAction<DataType>>;
   lightbox: LightboxType;
   setLightbox: Dispatch<SetStateAction<LightboxType>>;
+  videoplayer: VideoPlayerType;
+  setVideoPlayer: Dispatch<SetStateAction<VideoPlayerType>>;
 }
 
 export const dataInitialState: DataType = {
@@ -29,11 +39,21 @@ export const lightboxInitialState: LightboxType = {
   poster: false,
 };
 
+export const videoplayerInitialState: VideoPlayerType = {
+  poster: true,
+  play: false,
+  pause: false,
+  ended: false,
+  loading: false,
+};
+
 export const AppContext = createContext<IAppContext>({
   data: dataInitialState,
   setData: () => {},
   lightbox: lightboxInitialState,
   setLightbox: () => {},
+  videoplayer: videoplayerInitialState,
+  setVideoPlayer: () => {},
 });
 
 export default function AppProvider({
@@ -41,10 +61,20 @@ export default function AppProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const [data, setData] = useState<DataType>(dataInitialState);
+  const [data, setData] = useState(dataInitialState);
   const [lightbox, setLightbox] = useState(lightboxInitialState);
+  const [videoplayer, setVideoPlayer] = useState(videoplayerInitialState);
   return (
-    <AppContext.Provider value={{ data, setData, lightbox, setLightbox }}>
+    <AppContext.Provider
+      value={{
+        data,
+        setData,
+        lightbox,
+        setLightbox,
+        videoplayer,
+        setVideoPlayer,
+      }}
+    >
       {children}
     </AppContext.Provider>
   );

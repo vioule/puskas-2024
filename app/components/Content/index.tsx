@@ -6,9 +6,11 @@ import { IoClose } from "react-icons/io5";
 import Poster from "./Poster";
 import Description from "./Description";
 import Preview from "./Preview";
+import VideoPlayer from "./VideoPlayer";
 
 export default function Content() {
-  const { data, lightbox, setLightbox } = useContext(AppContext);
+  const { data, lightbox, setLightbox, setVideoPlayer } =
+    useContext(AppContext);
   const [isPending, startTransition] = useTransition();
   const [scope, animate] = useAnimate();
   let isClickable = "hover:cursor-pointer hover:opacity-100 !important";
@@ -31,9 +33,20 @@ export default function Content() {
       });
       startTransition(async () => {
         await animate(reverseSequence);
+        setVideoPlayer({
+          poster: true,
+          play: false,
+          pause: true,
+          loading: false,
+          ended: false,
+        });
         await animate([
           ["#preview", { display: "block" }, { duration: 0 }],
-          ["#poster, #description", { display: "none" }, { duration: 0 }],
+          [
+            "#poster, #description, #video",
+            { display: "none" },
+            { duration: 0 },
+          ],
           ["#watch", { opacity: 1 }, { duration: 0.5, at: 0 }],
           ["#curtain", { width: "0.8%" }, { duration: 0.5, at: 0 }],
           ["#curtain", { height: "0" }, { duration: 0.5 }],
@@ -53,7 +66,11 @@ export default function Content() {
         await animate(playSequence);
         await animate([
           ["#preview", { display: "none" }, { duration: 0 }],
-          ["#poster, #description", { display: "block" }, { duration: 0 }],
+          [
+            "#poster, #description, #video",
+            { display: "block" },
+            { duration: 0 },
+          ],
           ["#comp, #year", { top: "0", opacity: 1 }, { duration: 0.5, at: 0 }],
           ["#name", { top: "0", opacity: 1 }, { duration: 0.5, at: 0.25 }],
           ["#close", { opacity: 1 }, { duration: 0.5, at: 0 }],
@@ -68,6 +85,7 @@ export default function Content() {
       <div className="relative w-full max-w-[800px]" ref={scope}>
         <Description data={data} />
         <div className="relative w-full h-0 pb-[56.25%] overflow-hidden">
+          <VideoPlayer year={data.year} />
           <Poster year={data.year} />
           <Preview preview={lightbox.preview} year={data.year} />
           <div className="absolute w-full h-full" id="curtain-container">
